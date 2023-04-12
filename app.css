@@ -152,11 +152,18 @@ aside h3{
     font-weight: 500;
 }
 
-aside .sidebar a{
- background: #111e88;
+aside .sideBar a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    height: 3.7rem;
+    transition: all 300ms ease;
 }
 
-/* aside .sideBar a span{
+aside .sideBar a span{
     font-size: 1.6rem;
 }
 
@@ -164,4 +171,46 @@ aside .sideBar a:last-child{
     position: absolute;
     bottom: 2rem;
     width: 100%;
-} */
+} 
+
+aside .sideBar a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sideBar a.active:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sideBar a.active:hover span{
+    color:var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+aside .sideBar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sideBar a:hover span{
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    margin-left: 1rem;
+}
+
+aside .sideBar .inbox-count{
+    background: var(--color-danger);   
+    font-size: 1rem; 
+    border-radius: var(--border-radious-1);
+    margin-left: 5px;
+    color: var(--color-info-light);
+    padding: 0 .3rem;
+}
+
+
+
+
+
