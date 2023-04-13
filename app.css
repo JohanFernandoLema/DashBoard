@@ -53,7 +53,6 @@ body{
     display: grid;
     width: 96%;
     margin: 0 auto;
-    background: #7380ec;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
@@ -208,6 +207,38 @@ aside .sideBar .inbox-count{
     margin-left: 5px;
     color: var(--color-info-light);
     padding: 0 .3rem;
+}
+
+
+
+/* ========================= MAIN ======================= */
+main{
+    margin-top: 1.4rem;
+}
+main .date{
+    display: block;
+    background: var(--color-light);
+    border-radius: var(--border-radious-1);
+    margin-top: 1rem;
+    padding: .5rem 1.6rem;
+}
+main .date input[type="date"]{
+    background: transparent;
+    color: var(--color-dark);
+    width: 50%;
+}
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .insights > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radious);
+    margin-top: 1rem;
+    transition: all 300ms ease;
 }
 
 
