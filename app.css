@@ -25,7 +25,7 @@
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0 2rem 3rem black;
 }
 
 *{
@@ -357,4 +357,98 @@ main table tbody td{
 
 main table tbody tr:last-child td{
     border: none;
+}
+
+/* ============================== RIGHT SIDE OF THE WEBSITE ================== */
+
+.right h2{
+    margin: 2rem 2rem;
+}
+
+
+.updates-cards{
+    background: var(--color-white);
+    padding: 1rem 3rem;
+    border-radius: var(--border-radious-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease-out;
+}
+.updates-cards:hover{
+    box-shadow: none;
+}
+
+/* Remove the shadow box for the sales analytics cards */
+.right .analytics .online-orders:hover{
+    box-shadow: none;
+}
+
+.right .analytics .online-orders{
+    margin-bottom: .5rem;
+    background: var(--color-white);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: var(--border-radious-3);
+    box-shadow: var(--box-shadow);
+    transform: all 300ms ease-in-out;
+}
+
+.right .analytics .offline-orders{
+    margin-bottom: .5rem;
+    background: var(--color-white);
+    height: 5rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radious-3);
+    box-shadow: var(--box-shadow);
+    transform: all 300ms ease;
+}
+
+.right .analytics .new-clients{
+    margin-bottom: .5rem;
+    background: var(--color-white);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: var(--border-radious-3);
+    box-shadow: var(--box-shadow);
+    transform: all 300ms ease;
+}
+.right .analytics .add-product{
+    background: transparent;
+    font-size: 1.1rem;
+    display: flex;
+    color: var(--color-primary);
+    align-items: center;
+    height: 5rem;
+    border: 2px dashed var(--color-primary);
+    padding: 1rem 1rem;
+    border-radius: var(--border-radious-3);
+    box-shadow: var(--box-shadow);
+    transform: all 300ms ease;
+
+}
+
+.right .analytics div span{
+    background: var(--color-primary);
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+.right .analytics div span{
+    background: var(--color-primary);
+    padding: .5rem .7rem;
+    border-radius: 50%;
+}
+
+.right .analytics .offline-orders span{
+    background: var(--color-danger);
+}
+
+.right .analytics .new-clients span{
+    background: var(--color-success);
 }
