@@ -3,6 +3,9 @@
 
 /************ ROOT VARIABLES ********************/
 :root{
+    --profile-1:#fde2f3;
+    --profile-2:#A06CD5;
+    --profile-3: #7D8CC4;
     --color-primary: #7380ec;       
     --color-danger: #ff7782;
     --color-success: #41f1b6;
@@ -331,6 +334,23 @@ main .insights .small{
     margin-top: 2rem;
  }
 
+.right .theme-toggler{
+    background: var(--color-light);
+    border-radius: var(--border-radious-1);
+    width: 3.5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.right .theme-toggler .active{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radious-1);
+}
+
  main .recent-orders h2{
     margin-bottom: 0.8rem;
  }
@@ -360,11 +380,62 @@ main table tbody tr:last-child td{
 }
 
 /* ============================== RIGHT SIDE OF THE WEBSITE ================== */
+.right .updates-cards div h1{
+    border-radius: 50%;
+    padding: .3rem .6rem;
+}
+
+.right .top{
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .top button{
+    display: none;
+}
 
 .right h2{
     margin: 2rem 2rem;
 }
 
+.right .updates-cards .first-guy h1{
+    background: var(--profile-1);
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+    right: 1rem;
+    top: .5rem;
+    color: #fff;
+}
+
+.right .updates-cards .second-guy h1{
+    background: var(--profile-2);
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+    color: #fff;
+}
+.right .updates-cards .second-guy span{
+    position: relative;
+    left: 4.8rem;
+}
+.right .updates-cards .third-guy h1{
+    background: var(--profile-3);
+    color: #fff;
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+    right: 1rem;
+    top: .5rem;
+}
+.right .updates-cards .third-guy span{
+    position: relative;
+    left: 4.8rem;
+}
 
 .updates-cards{
     background: var(--color-white);
