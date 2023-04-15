@@ -120,7 +120,6 @@ aside{
     height: 100vh;
 }
 aside .top{
-    background: var(--color-primary-variant);
     display: flex;
     align-items: center;
     justify-content: space-between;
